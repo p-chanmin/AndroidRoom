@@ -7,47 +7,31 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/textId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="textId"/>
-    <EditText
-        android:id="@+id/textName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="textName"/>
-    <EditText
-        android:id="@+id/textAge"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="textAge"/>
-    <EditText
-        android:id="@+id/textPhone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="textPhone"/>
-    <Button
-        android:id="@+id/submitBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="submit"/>
+
     <Button
         android:id="@+id/refreshBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="refresh"/>
-    <Button
-        android:id="@+id/deleteBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="delete"/>
 
     <TextView
-        android:id="@+id/showDB"
+        android:id="@+id/lang"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="룸 데이터베이스"
+        android:text="다국어 확인"
         android:gravity="center"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/showDB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="룸 데이터베이스"
+            android:gravity="center"/>
+
+    </ScrollView>
+
 
 </LinearLayout>

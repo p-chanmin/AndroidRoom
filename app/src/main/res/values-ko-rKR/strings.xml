@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidRoom</string>
+    <string name="hello">안녕하세요</string>
+    <string name="good">좋아요</string>
+</resources>

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AndroidRoom</string>
+    <string name="hello">hello</string>
+    <string name="good">good</string>
 </resources>
