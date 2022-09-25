@@ -243,4 +243,4 @@ class MainActivity : AppCompatActivity() {
 
 |                   <b>Assets의 user.db</b>                    |                       <b>실행화면</b>                        |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src=https://user-images.githubusercontent.com/87304360/192141395-0837eb77-fb6d-4e89-bed5-013e65c60b56.PNG> | <img src=https://user-images.githubusercontent.com/87304360/192141401-35f8574b-f572-4b13-9384-de97800650d3.png> |
+| <img src=https://user-images.githubusercontent.com/87304360/192141395-0837eb77-fb6d-4e89-bed5-013e65c60b56.PNG width = 400> | <img src=https://user-images.githubusercontent.com/87304360/192141401-35f8574b-f572-4b13-9384-de97800650d3.png width = 400> |
