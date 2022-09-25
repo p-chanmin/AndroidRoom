@@ -7,25 +7,60 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <EditText
+        android:id="@+id/editIndex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="index"/>
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="name"/>
+    <EditText
+        android:id="@+id/editAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="age"/>
 
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add"/>
     <Button
         android:id="@+id/refreshBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="refresh"/>
-
-    <TextView
-        android:id="@+id/lang"
+    <EditText
+        android:id="@+id/queryAge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="다국어 확인"
+        android:hint="몇 살 이하?"/>
+    <Button
+        android:id="@+id/queryBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Query"/>
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="delete"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="룸 데이터베이스 결과화면"
         android:gravity="center"/>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/showDB"
+            android:id="@+id/textDB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="룸 데이터베이스"

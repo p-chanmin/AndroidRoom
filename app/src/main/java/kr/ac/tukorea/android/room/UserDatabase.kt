@@ -8,13 +8,13 @@ import androidx.room.RoomDatabase
 import androidx.room.migration.Migration
 import androidx.sqlite.db.SupportSQLiteDatabase
 
-@Database(entities = arrayOf(SmeltingEntity::class), version = 1)
-abstract class SmeltingDatabase : RoomDatabase() {
-    abstract fun SmeltingDAO() : SmeltingDAO
+@Database(entities = arrayOf(UserEntity::class), version = 1)
+abstract class UserDatabase : RoomDatabase() {
+    abstract fun UserDAO() : UserDAO
 
     // 싱글톤 패턴
     companion object{
-        var INSTANCE : SmeltingDatabase? = null
+        var INSTANCE : UserDatabase? = null
 
         // Migration 코드
         private val MIGRATION_1_2 = object : Migration(1, 2) {
@@ -23,12 +23,12 @@ abstract class SmeltingDatabase : RoomDatabase() {
             }
         }
 
-        fun getInstance(context: Context): SmeltingDatabase? {
+        fun getInstance(context: Context): UserDatabase? {
             if(INSTANCE == null){
-                synchronized(SmeltingDatabase::class){
+                synchronized(UserDatabase::class){
                     INSTANCE = Room.databaseBuilder(context.applicationContext,
-                        SmeltingDatabase::class.java, "smelting.db")
-                        .createFromAsset("test.db")
+                        UserDatabase::class.java, "userDB")
+                        .createFromAsset("user.db")
                         .addMigrations()
                         .fallbackToDestructiveMigration()
                         .build()
